@@ -1,4 +1,5 @@
-{
+# ciao
+# eventually im going to have to figure out a way to order the dict  date-wise order in the json file, but i assume this would be terribly difficult because the dates are stored as strings
   "Bhavya": "January 1st",
   "Aadi": "September 11th",
   "Arun": "October 15th"

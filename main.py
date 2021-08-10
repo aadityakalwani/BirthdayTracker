@@ -1,5 +1,6 @@
 # ciao
 # may the coding begin
+
 import json
 
 with open("birthdays.json") as f:
