@@ -10,7 +10,7 @@ while True:
 
     name = input("At any time, you can press q to quit.\nEnter a name: ")
 
-    if name.lower == "q":
+    if name.lower() == "q":
         print("You have quit this loop.")
         break
 
@@ -20,5 +20,10 @@ while True:
     else:
         print(f"{name} is not in this dictionary.")
         bday = input("Enter their birthday: ")
+
+        if bday.lower() == "q":
+            print("You have quit this loop.")
+            break
+
         birthdays[name] = bday
         print("Birthdays database and dictionary updated.")
