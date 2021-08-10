@@ -1,10 +1,9 @@
 # ciao
 # may the coding begin
+import json
 
-birthdays = {
-    "Bhavya": "January 1st, 2006"
-            }
-
+with open("birthdays.json") as f:
+    birthdays = json.load(f)
 
 while True:
 
@@ -26,4 +25,6 @@ while True:
             break
 
         birthdays[name] = bday
+        with open("birthdays.json", "w") as f:
+            json.dump(birthdays, f, indent=2)
         print("Birthdays database and dictionary updated.")
