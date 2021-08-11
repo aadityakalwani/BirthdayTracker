@@ -1,6 +1,30 @@
-# ciao
-# eventually im going to have to figure out a way to order the dict  date-wise order in the json file, but i assume this would be terribly difficult because the dates are stored as strings
+{
   "Bhavya": "January 1st",
   "Aadi": "September 11th",
-  "Arun": "October 15th"
+  "Arun": "October 15th",
+  "Chandani": "August 11th",
+  "Avinash": "September 10th",
+  "Arya": "January 3rd",
+  "Riya": "January 9th",
+  "Mahi": "January 14th",
+  "Yashna": "February 5th",
+  "Lily": "February 20th",
+  "Shalini": "March 11th",
+  "Issy Byrne": "March 15th",
+  "Nishita Jadwani": "April 12th",
+  "Tannu": "May 17th",
+  "Aanchal": "May 17th",
+  "Neetu Bua": "June 3rd",
+  "Yoshi": "June 7th",
+  "April": "June 21st",
+  "Jeenisa Thapa": "June 26th",
+  "Lucia": "June28th",
+  "Emilia Brasch": "July 10th",
+  "Rebecca Thomas": "August 1st",
+  "Vanshika Pithalia": "16/08",
+  "Malina Hawthorne": "30/08",
+  "Smera": "06/11",
+  "Angel Jadwani": "22/12",
+  "Princess Jadwani": "22/12",
+  "Maisie Morton": "23/12"
 }
