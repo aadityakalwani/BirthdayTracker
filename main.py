@@ -8,7 +8,7 @@ with open("birthdays.json") as f:
 
 while True:
 
-    name = input("At any time, you can press q to quit.\nEnter a name: ")
+    name: str = input("At any time, you can press q to quit.\nEnter a name: ").lower()
 
     if name.lower() == "q":
         print("You have quit this loop.")
@@ -18,14 +18,15 @@ while True:
         print(f"{name}'s birthday is on {birthdays[name]}")
 
     else:
-        print(f"{name} is not in this dictionary.")
-        bday = input("Enter their birthday: ")
-
-        if bday.lower() == "q":
-            print("You have quit this loop.")
-            break
-
-        birthdays[name] = bday
-        with open("birthdays.json", "w") as f:
-            json.dump(birthdays, f, indent=2)
-        print("Birthdays database and dictionary updated.")
+        new_birthday = input(f"{name} is not in this dictionary.\nEnter their birthday: ")
+        birthdays.setdefault(name, new_birthday)
+        # bday = input("Enter their birthday: ")
+        #
+        # if bday.lower() == "q":
+        #     print("You have quit this loop.")
+        #     break
+        #
+        # birthdays[name] = bday
+        # with open("birthdays.json", "w") as f:
+        #     json.dump(birthdays, f, indent=2)
+        # print("Birthdays database and dictionary updated.")
