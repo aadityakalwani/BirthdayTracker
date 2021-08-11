@@ -33,3 +33,11 @@ while True:
         # with open("birthdays.json", "w") as f:
         #     json.dump(birthdays, f, indent=2)
         # print("Birthdays database and dictionary updated.")
+
+# how to order/sort the dict:
+# the key here is not to use a dictionary
+# OrderedDict() I think?
+# Convert the dict to a list of pairs (tuples), sort the list, then construct a dict out of it
+
+# make it so that i can also input a date and it tells me if there is a birthday on that date
+# as well as th next x amount of birthdays
