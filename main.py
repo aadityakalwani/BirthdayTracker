@@ -20,6 +20,9 @@ while True:
     else:
         new_birthday = input(f"{name} is not in this dictionary.\nEnter their birthday: ")
         birthdays.setdefault(name, new_birthday)
+
+        # this is all the code that i used to run in this else statement, now its a lot shorter using the set and get
+
         # bday = input("Enter their birthday: ")
         #
         # if bday.lower() == "q":
