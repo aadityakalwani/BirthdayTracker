@@ -8,7 +8,7 @@ with open("birthdays.json") as f:
 
 while True:
 
-    name: str = input("At any time, you can press q to quit.\nEnter a name: ").lower()
+    name: str = input("At any time you can press q to quit.\nEnter a name: ").lower()
 
     if name.lower() == "q":
         print("You have quit this loop.")
