@@ -12,16 +12,23 @@ with open("birthdays.json") as f:
                             "Enter your command here: ").lower()
 
     if begin_loop.lower() == "q":
-        print("You have quit.")
+        print("You have quit this loop.")
 
     if begin_loop.lower() == "name":
         while True:
             name: str = input("This will search the dict for a person.\nEnter their name here: ")
+            if name.lower() == "q":
+                print("You have quit this loop.")
+                break
+
             if name in birthdays:
                 print(f"{name}'s birthday is on {birthdays[name]}")
 
             else:
                 new_birthday = input(f"{name} is not in this dictionary.\nEnter their birthday: ")
+                if name.lower() == "q":
+                    print("You have quit this loop.")
+                    break
                 birthdays.setdefault(name, new_birthday)
 
                 # this is all the code that i used to run in this else statement
@@ -37,6 +44,12 @@ with open("birthdays.json") as f:
                 # with open("birthdays.json", "w") as f:
                 #     json.dump(birthdays, f, indent=2)
                 # print("Birthdays database and dictionary updated.")
+
+    if begin_loop.lower() == "date":
+        print("You have chosen the 'date' option.\n"
+              "This will now show all birthdays occurring in the month you select.\n")
+        month: str = input("Enter a month:")
+        print(f"{month}")
 
 
 # how to order/sort the dict:
