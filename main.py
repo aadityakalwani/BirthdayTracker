@@ -38,6 +38,7 @@ with open("birthdays.json") as f:
                 #     json.dump(birthdays, f, indent=2)
                 # print("Birthdays database and dictionary updated.")
 
+
 # how to order/sort the dict:
 # the key here is not to use a dictionary
 # OrderedDict() I think?
