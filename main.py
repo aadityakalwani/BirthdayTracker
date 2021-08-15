@@ -22,7 +22,8 @@ with open("birthdays.json") as f:
                 break
 
             if name in birthdays:
-                print(f"{name}'s birthday is on {birthdays[name]}")
+                print("their name is in the dict.")
+                print(f"{name}'s birthday is on {birthdays[name][0]}-{birthdays[name][1]}")
 
             else:
                 new_birthday = input(f"{name} is not in this dictionary.\nEnter their birthday: ")
@@ -31,26 +32,15 @@ with open("birthdays.json") as f:
                     break
                 birthdays.setdefault(name, new_birthday)
 
-                # this is all the code that i used to run in this else statement
-                # now its a lot shorter using the set and get
-
-                # bday = input("Enter their birthday: ")
-                #
-                # if bday.lower() == "q":
-                #     print("You have quit this loop.")
-                #     break
-                #
-                # birthdays[name] = bday
-                # with open("birthdays.json", "w") as f:
-                #     json.dump(birthdays, f, indent=2)
-                # print("Birthdays database and dictionary updated.")
-
     if begin_loop.lower() == "date":
         print("You have chosen the 'date' option.\n"
               "This will now show all birthdays occurring in the month you select.\n")
         month: str = input("Enter a month:")
-        print(f"{month}")
 
+        print(f"{month} contains the birthdays of ")
+
+
+# you can use for value in d.values() and for key, value in d.items() to make it use something else
 
 # how to order/sort the dict:
 # the key here is not to use a dictionary
@@ -59,3 +49,7 @@ with open("birthdays.json") as f:
 
 # make it so that i can also input a date and it tells me if there is a birthday on that date
 # as well as th next x amount of birthdays
+
+# is it possible/how can i turn a number into a month of the year? (eg. 1 = "january", 4 = "april")
+# yes, you can use the calender module or datetime
+# the calendar module should have that @Aadi
